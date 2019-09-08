@@ -1,9 +1,11 @@
 
 simple-db:	
-	gcc *.c -o simple-db
+	gcc *.c -Wall -o simple-db
 
 PHONY: all
-all: simple-db
+all: 
+	make clean
+	make simple-db
 
 PHONY: run
 run: simple-db
